@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h3>This is Category.vue</h3>
+    <h3>This is Category</h3>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'MyComponent2'
+    name: 'Category'
 }
 </script>
 

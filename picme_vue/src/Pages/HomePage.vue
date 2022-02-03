@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'MyComponent'
+    name: 'HomePage'
 }
 </script>
 

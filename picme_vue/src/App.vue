@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <Nav/>
     <HomePage/>
+    <router-view header="Listings In Miami"></router-view>
   </div>
 </template>
 
 <script>
-import HomePage from './Pages/HomePage.vue'
+
+import Nav from './components/Nav.vue'
 
 export default {
   name: 'App',
   components: {
-    HomePage
+    Nav
+  
+  
   }
 }
 </script>
