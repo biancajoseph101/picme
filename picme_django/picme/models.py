@@ -11,7 +11,7 @@ class Category(models.Model):
       return self.name
 
 class Image(models.Model):
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='images')
+    category = models.ManyToManyField(Category)
     title = models.CharField(max_length=50, default='no image title')
     img = models.FileField()
 
