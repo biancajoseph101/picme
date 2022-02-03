@@ -16,7 +16,7 @@ class Image(models.Model):
     category = models.ManyToManyField(
         Category, related_name="image_list", blank=True)
     title = models.CharField(max_length=50, default='no image title')
-    img = models.FileField()
+    img = models.ImageField(null=True, blank=True, upload_to="images/")
 
     def __str__(self):
         return self.title
