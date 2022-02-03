@@ -1,12 +1,14 @@
 <template>
-  <h2>This is an image card</h2>
+  <div>
+    <h4>{{ image_card.title }}</h4>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Image',
+  name: 'ImageCard',
   props: {
-    image: Object
+    image_card: Object
   }
 }
 </script>
