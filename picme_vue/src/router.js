@@ -5,7 +5,7 @@ import CategoryForm from './Pages/CategoryForm';
 
 const routes = [
   { path: '/', component: HomePage, name: 'HomePage' },
-  { path: '/categories', component: Category, name: 'Category' },
+  { path: '/categories/:cat_id', component: Category, name: 'Category' },
   { path: '/categoryform', component: CategoryForm, name: 'CategoryForm' }
 ];
 
