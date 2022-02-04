@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Nav/>
+    <CategoryNav/>
     <!-- <Upload/> -->
     <router-view header="Header"></router-view>
   </div>
@@ -9,12 +10,13 @@
 <script>
 
 import Nav from './components/Nav.vue'
-// import Upload from './components/Upload.vue'
+import CategoryNav from './components/CategoryNav.vue'
 
 export default {
   name: 'App',
   components: {
     Nav,
+    CategoryNav
     // Upload
   }
 }
@@ -27,6 +29,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>
