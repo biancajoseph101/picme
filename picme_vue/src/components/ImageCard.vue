@@ -1,6 +1,7 @@
 <template>
   <div class="image_card_container">
     <h4>{{ image_card.title }}</h4>
+    <img :src="image_card.img" alt="picture" class="picture" />
     <button @click="deleteImage">Delete</button>
   </div>
 </template>
@@ -27,5 +28,10 @@ export default {
 </script>
 
 <style scoped>
+
+img {
+  max-height: 200px;
+}
+
 
 </style>
