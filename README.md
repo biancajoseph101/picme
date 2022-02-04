@@ -19,16 +19,16 @@
 
 ### ***Screenshots:***
 Image Placeholder: 
-![OrangeHatImg](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnwfilm.org%2Fapp%2Fuploads%2F2016%2F07%2Ftumblr_niwljvAz0h1qzs1n8o1_1280.jpg&f=1&nofb=1)
+![WallpaperPage](https://i.imgur.com/rYSZ6vX.png)
 
-![BBDuck](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4kwallpaper.wiki%2Fwp-content%2Fuploads%2F2019%2F07%2F171906.jpg&f=1&nofb=1)
+![CreateCategoryForm](https://i.imgur.com/v8aTuME.png)
 
-![DeepWater](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.pNVzNwRxz2tmjdfRTVQjRQHaEL%26pid%3DApi&f=1)
+![AddImageForm](https://i.imgur.com/ybOpoef.png)
 
 ### ***Task List:***
 - [ ] Include a way for users to submit an image from file rather than URL
 - [ ] Split repo & deploy
-- [ ] Update Styling
+- [x] Update Styling
 
 
 ### ***Credits***
