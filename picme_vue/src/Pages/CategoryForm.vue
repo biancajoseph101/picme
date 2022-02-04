@@ -31,18 +31,14 @@ export default {
           "name": this.name,
           "description": this.description,
           "img_url": this.img_url
-          
         }, {
           auth: {
             username: 'picmeuser',
             password: 'picme'
           }
         })
-        console.log(res)
-        // this.name = res.data.name
-        // this.description = res.data.description
-        // this.img_url = res.data.img_url
-        // this.category.push()
+        this.$router.push(`/categories/${res.data.id}`);
+        this.$router.go();
       }
     }
 }
