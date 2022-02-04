@@ -34,7 +34,7 @@ export default {
     },
     selectCategory(id){
       this.$router.push(`/categories/${id}`)
-      // this.$router.go()
+      this.$router.go()
     }
   }
 }

@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <Nav/>
-    <HomePage/>
-    <router-view header="Listings In Miami"></router-view>
+    <router-view header="Header"></router-view>
   </div>
 </template>
 
@@ -13,9 +12,7 @@ import Nav from './components/Nav.vue'
 export default {
   name: 'App',
   components: {
-    Nav
-  
-  
+    Nav,
   }
 }
 </script>
