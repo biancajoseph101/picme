@@ -2,6 +2,11 @@
   <div v-if="catDetails">
     <h3>{{catDetails.name}}</h3>
     <img :src="catDetails.img_url" alt="">
+    <div>{{catDetails.description}}</div>
+    <div :key="image.id" v-for="image in imageList">
+      <h3>{{image.title}}</h3>
+      <img :src="image.img" alt="">
+    </div>
   </div>
 </template>
 
@@ -10,10 +15,11 @@ import axios from 'axios'
 export default {
     name: 'Category',
     components: {
-      // PictureCard
+      // ImageCard
     },
     data: () => ({
-      catDetails: null
+      catDetails: null,
+      imageList: null
     }),
     mounted: function(){
       this.getCatDetails()
@@ -26,6 +32,7 @@ export default {
         )
         console.log(res.data)
         this.catDetails = res.data
+        this.imageList = res.data.image_list
       }
     }
 }
