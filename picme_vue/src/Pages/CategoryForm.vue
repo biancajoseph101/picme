@@ -43,16 +43,6 @@ export default {
         // this.description = res.data.description
         // this.img_url = res.data.img_url
         // this.category.push()
-      },
-      async postCategory() {
-          const res = await axios.get(`http://localhost:8000/categories/`)
-          return res.data
-      },
-      async getCategories() {
-        console.log(res.data)
-        const res = await axios.get(`http://localhost:8000/categories/`)
-        return res.data
-
       }
     }
 }
