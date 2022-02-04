@@ -51,6 +51,7 @@ export default {
   background-color: gray;
   opacity: 50%;
   text-align: end;
+  margin-bottom: 10px;
 }
 .flex-div {
   display: flex;

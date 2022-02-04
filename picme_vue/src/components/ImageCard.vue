@@ -4,7 +4,7 @@
       <img :src="image_card.img" alt="picture" :class="picclass" @mouseover="mouseon" @mouseleave="mouseoff"/>
       <div v-if="showName" class="center" >{{ image_card.title }}</div>
     </div>
-    <div @click="deleteImage" class="delBtn">-</div>
+    <div @click="deleteImage" class="delBtn">x</div>
   </div>
 </template>
 
@@ -73,6 +73,7 @@ img {
 
 .image_card_container {
   width: 300px;
+  margin-bottom: 10px;
 }
 
 .delBtn {
@@ -85,7 +86,8 @@ img {
 }
 
 .delBtn:hover {
-  background-color: #246861;
+  background-color: #682424;
+  color: white
 }
 
 
