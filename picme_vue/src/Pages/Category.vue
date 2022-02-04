@@ -1,7 +1,11 @@
 <template>
   <div v-if="catDetails">
-    <h3>{{catDetails.name}}</h3>
-    <img :src="catDetails.img_url" alt="">
+    <div class="container">
+      <img :src="catDetails.img_url" alt="" class="blur">
+      <div class="center">{{catDetails.name}}</div>
+    </div>
+
+
     <div>{{catDetails.description}}</div>
     <div class="cont">
       <div :key="image_card.id" v-for="image_card in imageList" >
@@ -56,5 +60,28 @@ export default {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      justify-content: space-around;
     }
+    .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+}
+
+img { 
+  width: 100%;
+  height: 100px;
+  border-radius: 7px;
+}
+
+.blur {
+ opacity: 0.4;
+}
 </style>

@@ -1,11 +1,10 @@
 <template>
   <div>
-    <h3>This is home</h3>
-      <section class="image container-grid">
+      <div class="image-container-grid">
         <div v-for="image_card in image_array" :key="image_card.id">
           <ImageCard v-bind:image_card="image_card" @handleDelete="handleDelete"/>
         </div>
-      </section>
+      </div>
   </div>
 </template>
 
@@ -40,5 +39,12 @@ export default {
     h3 {
         color: #80cbc4;
     }
-    
+
+    .image-container-grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around
+    }
+
 </style>
