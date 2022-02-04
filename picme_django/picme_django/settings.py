@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'picme',
     'rest_framework',
-    "corsheaders",
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
