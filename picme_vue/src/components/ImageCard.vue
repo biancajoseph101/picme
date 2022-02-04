@@ -31,7 +31,11 @@ export default {
 
 img {
   max-height: 200px;
+
 }
 
+.image_card_container {
+  width: 30vw
+}
 
 </style>

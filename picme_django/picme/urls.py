@@ -5,6 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('upload/', views.FileUploadView.as_view(), name='file_upload'),
     path('categories/', views.CategoryList.as_view(), name='category_list'),
     path('categories/<int:pk>', views.CategoryDetail.as_view(),
          name='category_detail'),
