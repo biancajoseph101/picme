@@ -3,7 +3,7 @@
     <h3>This is home</h3>
       <section class="image container-grid">
         <div v-for="image_card in image_array" :key="image_card.id">
-          <ImageCard v-bind:image_card="image_card" />
+          <ImageCard v-bind:image_card="image_card" @handleDelete="handleDelete"/>
         </div>
       </section>
   </div>
@@ -27,7 +27,9 @@ export default {
       async getImages() {
         const res = await axios.get(`http://localhost:8000/images/`)
         this.image_array = res.data
-        console.log(this.image_array)
+      },
+      handleDelete(id) {
+        this.image_array = this.image_array.filter(image => image.id !== id)
       }
     }
 }
