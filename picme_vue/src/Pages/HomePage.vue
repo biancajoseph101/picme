@@ -39,6 +39,7 @@ export default {
     h3 {
         color: #80cbc4;
     }
+
     .image-container-grid {
       display: flex;
       flex-wrap: wrap;
