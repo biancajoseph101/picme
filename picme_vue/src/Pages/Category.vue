@@ -3,19 +3,22 @@
     <h3>{{catDetails.name}}</h3>
     <img :src="catDetails.img_url" alt="">
     <div>{{catDetails.description}}</div>
-    <div :key="image.id" v-for="image in imageList">
-      <h3>{{image.title}}</h3>
-      <img :src="image.img" alt="">
+    <div class="cont">
+      <div :key="image_card.id" v-for="image_card in imageList" >
+        <ImageCard v-bind:image_card="image_card" @handleDelete="handleDelete"/>
+     </div>
     </div>
+
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import ImageCard from '../components/ImageCard.vue'
 export default {
     name: 'Category',
     components: {
-      // ImageCard
+      ImageCard
     },
     data: () => ({
       catDetails: null,
@@ -33,6 +36,9 @@ export default {
         console.log(res.data)
         this.catDetails = res.data
         this.imageList = res.data.image_list
+      },
+      handleDelete(id) {
+        this.imageList = this.imageList.filter(image => image.id !== id)
       }
     }
 }
@@ -41,10 +47,14 @@ export default {
 
 <style scoped>
     h3 {
-        color: #80cbc4;
+      color: #80cbc4;
     }
-
     img {
-  max-height: 200px;
+      height: 200px;
+    }
+    .cont {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
     }
 </style>

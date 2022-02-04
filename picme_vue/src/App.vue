@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Nav/>
+    <!-- <Upload/> -->
     <router-view header="Header"></router-view>
   </div>
 </template>
@@ -8,11 +9,13 @@
 <script>
 
 import Nav from './components/Nav.vue'
+// import Upload from './components/Upload.vue'
 
 export default {
   name: 'App',
   components: {
     Nav,
+    // Upload
   }
 }
 </script>

@@ -1,6 +1,12 @@
 from rest_framework import serializers
 from .models import Image, Category
 
+# class ImageUploadSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Image
+#         fields = ('id', 'category', 'title')
+#     def create(self,validated_data):
+
 
 class ImageSerializer(serializers.ModelSerializer):
     category = serializers.PrimaryKeyRelatedField(
